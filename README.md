@@ -37,46 +37,6 @@ This repo uses the following label mapping (as implemented in `make_dataset.py`)
 
 ## Repository Structure
 
-# Trading Book Identifier (Supervised ML) — A/B/C/D
-
-This repository demonstrates a **supervised machine learning classification** proof-of-concept that predicts a **trading book label** (A/B/C/D) from **exactly 4 static features**:
-
-- `bond_type` (categorical)
-- `currency` (categorical)
-- `time_to_maturity_days` (numeric)
-- `coupon_type` (categorical)
-
-The dataset is **synthetic** (no confidential data) but shaped to resemble real inputs. The label logic is deterministic, and the ML model learns the mapping from examples.
-
----
-
-## Problem Statement
-
-Build a supervised ML classifier that identifies a trading book label based on 4 static features and evaluates performance using **only**:
-
-- **Accuracy**
-- **Precision**
-- **Recall**
-
-No additional metrics are printed.
-
----
-
-## Labels (A/B/C/D)
-
-This repo uses the following label mapping (as implemented in `make_dataset.py`):
-
-- **A** = USD + floating coupon + Agency  
-- **B** = USD + fixed coupon + Agency + `time_to_maturity_days <= 365`  
-- **D** = USD + fixed coupon + Agency + `time_to_maturity_days > 365`  
-- **C** = CAD + Agency (any coupon type, any maturity)  
-
-> Note: This mapping is designed so that **every generated row** maps to one of A/B/C/D (no unknown labels in training data).
-
----
-
-## Repository Structure
-
 trading-book-identifier-ml/
 ├─ README.md
 ├─ requirements.txt
