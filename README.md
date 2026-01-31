@@ -16,6 +16,8 @@ This repository demonstrates a **supervised machine learning classification** pr
 
 The dataset is **synthetic** (no confidential data) but shaped to resemble real inputs. The label logic is deterministic, and the ML model learns the mapping from examples.
 
+---
+
 ## Bigger picture (production context)
 
 In real trading operations, trades can occasionally be booked to the wrong trading book, creating downstream operational breaks and risk. This repository demonstrates how a supervised ML classifier can flag potentially mis-booked trades and suggest the most likely correct book based on static trade features. It can also be used as a pre-booking assist tool, proposing an appropriate book when the correct mapping is unclear.
