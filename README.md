@@ -1,5 +1,12 @@
 # Trading Book Identifier (Supervised ML)
 
+
+
+
+https://github.com/user-attachments/assets/990a0470-cf08-482d-a1ed-2cb898e85aa0
+
+
+
 This repository demonstrates a **supervised machine learning classification** proof-of-concept that predicts a **trading book label** (A/B/C/D) from **exactly 4 static features**:
 
 - `bond_type` (categorical)
